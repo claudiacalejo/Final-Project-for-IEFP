@@ -1,0 +1,61 @@
+
+  .card {
+    background: #85759949;
+    border: 2px solid #857599;
+    color: black;
+  }
+
+  .colorheader { 
+      background: #857599 !important;
+  }
+
+  .card{ /*ALTURA DOS CARDS!!! MUDAR QUANDO METER TEXTO DIREITO*/
+    height: 600px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: top, bottom;
+    background-repeat: no-repeat, repeat;
+    border-color: #857599;
+  }
+
+  #encomendas{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+#textoencomendas{
+  max-height: 500px;
+}
+
+#card_encomendas{
+  min-height: 100px;
+  margin: 0 60px; 
+  min-height: 200px;
+  background-color: white; 
+  border:white; 
+  align-items: center;
+}
+
+.card-group{
+  border-color: #857599;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+span{
+  color: red;
+}
+
+textarea {
+  height: auto;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
