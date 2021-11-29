@@ -20,8 +20,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
 
-
   <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
 
   <script>     
     //ESCOLHER BOLO DECORADO, NAKED CAKE, SEMI NAKED E NUMBER CAKE
@@ -62,6 +63,7 @@
         document.getElementById("merengue").className = "d-none";
         document.getElementById("recheiosuspiro").className = "d-none";
         document.getElementById("recheiopavlova").className = "d-none";
+        document.getElementById("numeropessoas").className = "d-none"; 
 
       } else if (h == "Cheesecake") {
         document.getElementById("saborcheesecake").className = "d-block";
@@ -73,6 +75,7 @@
         document.getElementById("merengue").className = "d-none";
         document.getElementById("recheiosuspiro").className = "d-none";
         document.getElementById("recheiopavlova").className = "d-none";
+        document.getElementById("numeropessoas").className = "d-none"; 
       
       } else if (h == "Pavlova" || h == "Bolo de Crepes") {
         document.getElementById("recheiopavlova").className = "d-block";
@@ -83,7 +86,8 @@
         document.getElementById("extras").className = "d-none";
         document.getElementById("merengue").className = "d-none";
         document.getElementById("recheiosuspiro").className = "d-none";
-        document.getElementById("saborcheesecake").className = "d-none";       
+        document.getElementById("saborcheesecake").className = "d-none";   
+        document.getElementById("numeropessoas").className = "d-none";    
       }
 
     }
@@ -155,9 +159,9 @@
           </li>
         </ul>
         <div class="social-part">
-          <a style="color: #3b5998; margin-right: 10px;" href="https://www.facebook.com/cakemood18/" role="button"><i
-              class="fa fa-facebook fa-lg"></i></a>
-          <a style="color: white;" href="https://www.facebook.com/cakemood18/" role="button"><i
+          <a style="color: #3b5998; margin-right: 10px;" href="https://www.facebook.com/cakemood18/" role="button"
+            target="_blank"><i class="fa fa-facebook fa-lg" style="color: white;"></i></a>
+          <a style="color: white;" href="https://www.instagram.com/cakemood18/" role="button" target="_blank"><i
               class="fa fa-instagram fa-lg"></i></a>
         </div>
       </div>
@@ -194,14 +198,13 @@
             <input id="date" type="date" name="data_entrega" min="2020-01-01">
             <p style="font-size: small;">As encomendas pelo site só podem ser feitas com o minimo de três dias de antecedência.</p>
         </div>
-        <span style="font-weight: lighter;">Os campos com * são obrigatórios.</span>
         <br>
         <!-- Escolher o Bolo -->
         <div class="container">
           <!--validar radiobuttons -->
           <div class="mb-3">
             <!-- tipo de bolo -->
-            <h5>Tipo de Bolo:</h5>
+            <h5>Tipo de Bolo:<span> *</span></h5>
             <div class="form-check" onclick="escolheCurso()">
                 <input type="radio" class="form-check-input" id="decorado" name="bolo" value="Decorado" required>
                 <label class="form-check-label">Decorado</label>
@@ -405,7 +408,7 @@
 
            <!-- NUMERO DE PESSOAS -->
           <div class="container">
-            <div id="numeropessoas" class="container position-absolute top-100 h-100 mt-3 mb-3 d-none">
+            <div id="numeropessoas" class="container position-absolute top-100 h-100 mt-4 mb-3 d-none">
               <h5>Tamanho do Bolo</h5>
               <div class="form-check">
                 <input class="form-check-input" type="radio" id="tamanho_s" name="numeropessoas" value="Tamanho S">
@@ -426,8 +429,12 @@
             </div>
           </div>
 
+          <div style="margin-top: 8px;">
+            <span style="font-weight: lighter;">Os campos com * são obrigatórios.</span>
+          </div>
+
           <!-- TEXT AREA -->
-          <div class="form-group">
+          <div class="form-group mt-3">
             <strong><label for="exampleFormControlTextarea1" ><h5>Deixe aqui o seu comentário/dúvida:</h5></label></strong>
             <textarea name="comentarios" maxlength="400" class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10" placeholder="Pode-nos indicar local em que pretende a entrega, o número que deseja o Number Cake, como deseja o seu topper entre muitas outras coisas. &#10;Assim, quando entrarmos em contacto consigo já teremos o máximo de informações. &#10; &#10;Máximo 400 caracteres."></textarea>
           </div>
@@ -443,7 +450,6 @@
         </form>
       </form>
     </div>
-  
 
     <!--==========================================-->
     <!--                 FOOTER                   -->
@@ -461,7 +467,6 @@
 
   <!-- Script para definir a data minima como 3 dias depois do dia de hoje -->
  
-
   <script>
     var today = new Date();
     today = new Date(today.setDate(today.getDate() + 3)).toISOString().split('T')[0];

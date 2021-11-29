@@ -1,0 +1,6 @@
+Para aceder à aplicação:
+
+Utilizador: Admin
+Password: Admin
+
+Depois poderá criar um utilizador só para si.

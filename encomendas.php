@@ -21,6 +21,9 @@
 
 
   <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+  
 </head>
 <body>
 
@@ -49,13 +52,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html#encomendas">Encomendas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Call</a>
-              </ul>
+              
+            </ul>
             <div class="social-part">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <a style="color: #3b5998; margin-right: 10px;" href="https://www.facebook.com/cakemood18/" role="button" target="_blank"><i class="fa fa-facebook fa-lg" style="color: white;"></i></a>
+              <a style="color: white;" href="https://www.instagram.com/cakemood18/" role="button" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
             </div>
           </div>
         </nav>
@@ -151,7 +152,7 @@
 ?>
 
 <div class="container">
-   <img src="sucesso.jpg" alt="encomenda registada com sucesso" class="rounded mx-auto d-block">
+   <img src="images/sucesso.jpg" alt="encomenda registada com sucesso" class="rounded mx-auto d-block">
    <br>
    <h2 class='text-center'>O seu pedido foi registado com sucesso!</h2>
    <br>
