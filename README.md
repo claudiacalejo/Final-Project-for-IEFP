@@ -6,7 +6,7 @@
 Cake Mood was a small project I started after finishing college.  
 When I had to do the final project for the Web Development course, I decided that I wanted to do something with real life aplication so I thought about what I needed for Cake Mood.  
 
-First, I created a webpage for people to see what CaKe Mood could do and if they want to place an order.  
+First, I created a webpage for people to see what Cake Mood could do and if they want to place an order.  
 Second, I created an app to manage orders.
 
 In short, what i did for this project was:
