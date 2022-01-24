@@ -3,19 +3,20 @@
 </p>
 
 ## About the project
-Cake Mood was a small project I started after finishing college. 
+Cake Mood was a small project I started after finishing college.  
+When I had to do the final project for the Web Development course, I decided that I wanted to do something with real life aplication so I thought about what I needed for Cake Mood.  
 
-When I had to do the final project for the Web Development course, I decided that I wanted to do something with real life aplication so I thought about what I needed for Cake Mood.
-
-First, I created a webpage for people to see what CaKe Mood could do and if they want to place an order.
-
-Second, I created an app to manage orders
+First, I created a webpage for people to see what CaKe Mood could do and if they want to place an order.  
+Second, I created an app to manage orders.
 
 In short, what i did for this project was:
-- An HTML and CSS webpage
+- HTML and CSS webpage
   - A window for clients see what Cake Mood can make
+- C++ app
+  - An app for Cake Mood  colaborator's see orders and make new ones
 - A database with SQL
   - 1st table - Store all the orders
   - 2nd table - Apps's login
 - PHP
-- C++
+  - Connection to the server 
+
